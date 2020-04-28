@@ -145,6 +145,7 @@ alias cbpi='carthage bootstrap --platform iOS'
 # -------------------------------------
 alias cdp='cd ~/projects'
 alias cdb='cd ~/projects/bootcamp'
+alias cdd='cd ~/.dotfiles'
 
 # For Atom
 # -------------------------------------
