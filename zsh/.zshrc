@@ -153,7 +153,7 @@ export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad
 #eval $(gdircolors ~/.zsh/dircolors.ansi-universal)
 if [ -n "$LS_COLORS" ]; then
-  zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+  zstyle ':completion:*' list-colors $LSCOLORS
 fi
 
 
