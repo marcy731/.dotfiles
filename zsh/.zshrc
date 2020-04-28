@@ -1,14 +1,14 @@
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+export PATH="/usr/local/bin:$PATH"
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+export PATH="/usr/local/opt/go/libexec/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
-export PATH=/usr/local/bin:$PATH
-export PATH=/usr/local/opt/go/libexec/bin:$PATH
 export PATH="$HOME/.pyenv/shims/python3:$PATH"
-export PATH=/Users/m_hasegawa/Library/Android/sdk:$PATH
-export PATH="/Users/m_hasegawa/Library/Android/sdk/tools:$PATH"
-export PATH="/Users/m_hasegawa/Library/Android/sdk/platform-tools:$PATH"
+export PATH="$HOME/Library/Android/sdk:$PATH"
+export PATH="$HOME/Library/Android/sdk/tools:$PATH"
+export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
 export JAVA_HOME=`/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/java_home -v "1.8"`
 export PATH="$JAVA_HOME/bin:$PATH"
-export PATH="/Users/m_hasegawa/development/flutter/bin:$PATH"
+export PATH="$HOME/development/flutter/bin:$PATH"
 
 
 # Aliases
