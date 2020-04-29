@@ -22,7 +22,7 @@ alias vz='vim ~/.zshrc'
 # -------------------------------------
 # For set .vimrc
 # -------------------------------------
-alias sv='source ~/.vimrc'
+alias vv='vim ~/.vimrc'
 
 # -------------------------------------
 # For Global
@@ -32,10 +32,9 @@ alias -g G='| grep'
 alias sudo='sudo ' # sudoでaliasを有効に
 
 # -------------------------------------
-# For set default vim to MacVim
+# For Linux
 # -------------------------------------
-alias ll='(){ls -l $1 | awk '\''{k=0;for(i=0;i<=8;i++)k+=((substr($1,i+2,1)~/[rwx]/)*2^(8-i));if(k)printf("%0o ",k);print}'\''}'
-alias lal='(){ls -al $1 | awk '\''{k=0;for(i=0;i<=8;i++)k+=((substr($1,i+2,1)~/[rwx]/)*2^(8-i));if(k)printf("%0o ",k);print}'\''}'
+alias ll='ls -la'
 
 # -------------------------------------
 # For Git
@@ -45,7 +44,7 @@ alias gcm="git checkout master"
 alias gcd="git checkout develop"
 alias gco='git checkout'
 alias gcoB='git checkout -B'
-alias gs='git status'
+alias gs='git status -sb'
 alias ga='git add'
 alias gai='git add -i'
 alias gaN='git add -N'
@@ -277,6 +276,9 @@ function do_enter() {
   echo
   ls_abbrev
   if [ "$(git rev-parse --is-inside-work-tree 2> /dev/null)" = 'true' ]; then
+    echo
+    echo -e "\e[0;33m--- git status ---\e[0m"
+    git status -sb
     echo
   fi
   zle reset-prompt
