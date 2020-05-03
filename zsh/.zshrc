@@ -10,6 +10,10 @@ export JAVA_HOME=`/System/Library/Frameworks/JavaVM.framework/Versions/A/Command
 export PATH="$JAVA_HOME/bin:$PATH"
 export PATH="$HOME/development/flutter/bin:$PATH"
 
+# -------------------------------------
+# For initializing
+# -------------------------------------
+eval "$(rbenv init -)"
 
 # Aliases
 
