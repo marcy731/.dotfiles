@@ -1,29 +1,61 @@
 filetype plugin indent on
-
-syntax on
-
-set nowrap
-
-set hlsearch
-set ignorecase
-set smartcase
+"""
+""" common
+"""
 
 set autoindent
-
-set ruler
+set background=dark
+set clipboard=unnamed
+set encoding=utf-8
+set expandtab
+set hlsearch
+set noswapfile
 set number
+set shiftwidth=2
+set tabstop=2
+set iskeyword+=\-
+set nowrap
+set ignorecase
+set smartcase
 set list
 set wildmenu
 set showcmd
-
-set shiftwidth=4
-set softtabstop=4
-set expandtab
-set tabstop=4
 set smarttab
+syntax on
 
-set clipboard=unnamed
+"""
+""" set per extensions
+"""
+
+autocmd Filetype java   setlocal ts=4 sw=4 cc=100
+autocmd Filetype php    setlocal ts=4 sw=4
+autocmd Filetype python setlocal ts=2 sw=2
+autocmd Filetype ruby   setlocal ts=2 sw=2 cc=100
+autocmd Filetype xml    setlocal ts=2 sw=2 
+autocmd Filetype html   setlocal ts=2 sw=2 cc=100
+autocmd Filetype sh     setlocal ts=2 sw=2 cc=100
+autocmd Filetype sql    setlocal ts=2 sw=2 
+autocmd BufNewFile,BufRead *.less set syntax=css
+
+"""
+""" key mapping
+"""
+map <C-c> <esc>
+
+"""
+""" netrw 
+"""
 
 let g:netrw_liststyle = 3
 let g:netrw_altv = 1
 let g:netrw_alto = 1
+
+"""
+""" nerdtree
+"""
+
+map <C-j> :tabp<CR>
+map <C-k> :tabn<CR>
+map <C-t> :tabe 
+let NERDTreeWinSize=60
+
