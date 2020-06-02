@@ -57,5 +57,5 @@ let g:netrw_alto = 1
 map <C-j> :tabp<CR>
 map <C-k> :tabn<CR>
 map <C-t> :tabe 
-let NERDTreeWinSize=60
+"let NERDTreeWinSize=60
 
