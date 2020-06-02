@@ -21,6 +21,10 @@ set list
 set wildmenu
 set showcmd
 set smarttab
+set laststatus=2
+set incsearch
+set ruler
+set cursorline
 syntax on
 
 """
