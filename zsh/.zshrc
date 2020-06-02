@@ -58,7 +58,8 @@ alias gca='git commit --amend -m'
 alias gd='git diff'
 alias gdc='git diff --cached'
 alias gl='git log'
-alias gg="git log --oneline --all --graph --date=short"
+# alias gg="git log --oneline --all --graph --date=short"
+alias gg="git log --oneline --all --graph --decorate=short"
 alias gsh='git stash'
 alias ashp='git stash pop'
 alias grl='git reflog'
