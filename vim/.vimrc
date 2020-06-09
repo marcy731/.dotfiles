@@ -26,6 +26,7 @@ set incsearch
 set ruler
 set cursorline
 syntax on
+packloadall
 
 """
 """ set per extensions
