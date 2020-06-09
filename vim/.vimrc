@@ -63,3 +63,18 @@ map <C-k> :tabn<CR>
 map <C-t> :tabe 
 "let NERDTreeWinSize=60
 
+"""
+""" nerdtree.git
+"""
+
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ "Unknown"   : "?"
+    \ }
