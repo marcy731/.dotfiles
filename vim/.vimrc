@@ -12,6 +12,7 @@ Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'mattn/vim-goimports'
 Plug 'tpope/vim-endwise'
+Plug 'mattn/emmet-vim'
 call plug#end()
 
 """
