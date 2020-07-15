@@ -65,6 +65,7 @@ alias ashp='git stash pop'
 alias grl='git reflog'
 alias grb='git rebase'
 alias grbi='git rebase -i'
+alias gf='git fetch --all -p'
 
 # -------------------------------------
 # For Bundler
