@@ -63,7 +63,10 @@ autocmd BufNewFile,BufRead *.less set syntax=css
 " --------------------------------
 map <C-c> <esc>
 inoremap <silent> jj <ESC>
-
+nnoremap ; :
+nnoremap : ;
+vnoremap : :
+vnoremap : ;
 
 " --------------------------------
 " netrw 
