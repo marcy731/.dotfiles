@@ -73,6 +73,22 @@ alias grbi='git rebase -i'
 alias gf='git fetch --all -p'
 
 # -------------------------------------
+# For Docker
+# -------------------------------------
+alias d='docker'
+alias dis='docker images'
+alias dp='docker ps -a'
+alias dc='docker-compose'
+alias dcu='docker-compose up'
+alias dcd='docker-compose down'
+alias dcr='docker-compose restart'
+alias dx='docker exec -it'
+alias dcpr='docker container prune'
+alias dvpr='docker volume prune'
+alias dipr='docker image prune'
+alias dsypr='docker system prune'
+
+# -------------------------------------
 # For Bundler
 # -------------------------------------
 alias bini='bundle init'
