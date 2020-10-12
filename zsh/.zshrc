@@ -135,6 +135,10 @@ alias cdd='cd ~/.dotfiles'
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export PGDATA=/usr/local/var/postgres
 
+# -------------------------------------
+# For ctags
+# -------------------------------------
+alias ctags="`brew --prefix`/bin/ctags"
 
 # Autoloads
 
