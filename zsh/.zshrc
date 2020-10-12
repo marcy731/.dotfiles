@@ -3,6 +3,7 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 export PATH="/usr/local/opt/go/libexec/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/.pyenv/shims/python3:$PATH"
+export PATH="$HOME/.nodebrew/current/bin:$PATH"
 export PATH="$HOME/Library/Android/sdk:$PATH"
 export PATH="$HOME/Library/Android/sdk/tools:$PATH"
 export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
@@ -27,6 +28,11 @@ alias vz='vim ~/.zshrc'
 # For set .vimrc
 # -------------------------------------
 alias vv='vim ~/.vimrc'
+
+# -------------------------------------
+# For nvim
+# -------------------------------------
+export XDG_CONFIG_HOME=~/.config
 
 # -------------------------------------
 # For Global
@@ -66,6 +72,22 @@ alias grl='git reflog'
 alias grb='git rebase'
 alias grbi='git rebase -i'
 alias gf='git fetch --all -p'
+
+# -------------------------------------
+# For Docker
+# -------------------------------------
+alias d='docker'
+alias dis='docker images'
+alias dp='docker ps -a'
+alias dc='docker-compose'
+alias dcu='docker-compose up'
+alias dcd='docker-compose down'
+alias dcr='docker-compose restart'
+alias dx='docker exec -it'
+alias dcpr='docker container prune'
+alias dvpr='docker volume prune'
+alias dipr='docker image prune'
+alias dsypr='docker system prune'
 
 # -------------------------------------
 # For Bundler
@@ -113,6 +135,10 @@ alias cdd='cd ~/.dotfiles'
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export PGDATA=/usr/local/var/postgres
 
+# -------------------------------------
+# For ctags
+# -------------------------------------
+alias ctags="`brew --prefix`/bin/ctags"
 
 # Autoloads
 
