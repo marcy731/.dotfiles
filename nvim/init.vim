@@ -13,6 +13,8 @@ Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'tpope/vim-endwise'
 Plug 'mattn/emmet-vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 
