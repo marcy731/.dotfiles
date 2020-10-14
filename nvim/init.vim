@@ -15,6 +15,7 @@ Plug 'tpope/vim-endwise'
 Plug 'mattn/emmet-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'dense-analysis/ale'
 call plug#end()
 
 
@@ -106,3 +107,11 @@ augroup lsp_install
   autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 augroup END
 command! LspDebug let lsp_log_verbose=1 | let lsp_log_file = expand('~/lsp.log')
+
+" --------------------------------
+" ale
+" --------------------------------
+let g:ale_fixers = {
+\   'ruby': ['rubocop'],
+\}
+let g:ale_fix_on_save = 1
