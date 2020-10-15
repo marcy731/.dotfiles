@@ -16,6 +16,7 @@ Plug 'mattn/emmet-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'dense-analysis/ale'
+Plug 'tpope/vim-rails'
 call plug#end()
 
 
