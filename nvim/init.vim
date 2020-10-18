@@ -3,7 +3,6 @@ filetype plugin indent on
 " --------------------------------
 " vim-plug
 " --------------------------------
-" 
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'prabirshrestha/async.vim'
@@ -24,8 +23,15 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'sheerun/vim-polyglot'
+Plug 'jpo/vim-railscasts-theme'
+Plug 'w0ng/vim-hybrid'
 call plug#end()
 
+
+" --------------------------------
+" colorscheme
+" --------------------------------
+colorscheme hybrid
 
 " --------------------------------
 " common
