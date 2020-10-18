@@ -20,6 +20,7 @@ Plug 'tpope/vim-rails'
 Plug 'mkitt/tabline.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
 call plug#end()
 
 
