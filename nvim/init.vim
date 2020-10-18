@@ -66,6 +66,7 @@ autocmd BufNewFile,BufRead *.less set syntax=css
 " --------------------------------
 " key mapping
 " --------------------------------
+let mapleader = "\<Space>"
 map <C-c> <esc>
 inoremap <silent> jj <ESC>
 nnoremap ; :
