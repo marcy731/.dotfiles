@@ -18,6 +18,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'dense-analysis/ale'
 Plug 'tpope/vim-rails'
 Plug 'mkitt/tabline.vim'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 
