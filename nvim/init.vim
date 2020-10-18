@@ -19,6 +19,7 @@ Plug 'dense-analysis/ale'
 Plug 'tpope/vim-rails'
 Plug 'mkitt/tabline.vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 
