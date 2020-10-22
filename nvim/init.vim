@@ -86,7 +86,8 @@ nnoremap ; :
 nnoremap : ;
 vnoremap : :
 vnoremap : ;
-nnoremap <leader>nn :NERDTreeToggle<cr>
+nnoremap <leader>n :NERDTreeToggle<cr>
+nnoremap <leader>f :Files<cr>
 
 " --------------------------------
 " netrw 
