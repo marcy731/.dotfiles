@@ -72,8 +72,9 @@ autocmd Filetype xml    setlocal ts=2 sw=2
 autocmd Filetype html   setlocal ts=2 sw=2 cc=100
 autocmd Filetype sh     setlocal ts=2 sw=2 cc=100
 autocmd Filetype sql    setlocal ts=2 sw=2 
+autocmd Filetype markdown     setlocal ts=2 sw=2 
 autocmd BufNewFile,BufRead *.less set syntax=css
-
+autocmd QuickFixCmdPost *grep* cwindow
 
 " --------------------------------
 " key mapping
@@ -85,6 +86,7 @@ nnoremap ; :
 nnoremap : ;
 vnoremap : :
 vnoremap : ;
+nnoremap <leader>nn :NERDTreeToggle<cr>
 
 " --------------------------------
 " netrw 
@@ -106,8 +108,9 @@ let NERDTreeWinSize=40
 " --------------------------------
 " vim-lsp
 " --------------------------------
-let g:lsp_diagnostics_enabled = 1
+let g:lsp_diagnostics_enabled = 0
 let g:lsp_diagnostics_echo_cursor = 1
+let g:lsp_highlight_references_enabled = 1
 
 function! s:on_lsp_buffer_enabled() abort
   setlocal omnifunc=lsp#complete
