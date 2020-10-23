@@ -71,6 +71,7 @@ alias grb='git rebase'
 alias grbi='git rebase -i'
 alias gf='git fetch --all -p'
 alias gp='git push'
+alias gb='git branch'
 
 # -------------------------------------
 # For Docker
