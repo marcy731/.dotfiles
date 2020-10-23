@@ -55,12 +55,8 @@ alias gini='git init'
 alias gcm="git checkout master"
 alias gcd="git checkout develop"
 alias gco='git checkout'
-alias gcoB='git checkout -B'
 alias gs='git status -sb'
 alias ga='git add'
-alias gai='git add -i'
-alias gaN='git add -N'
-alias gap='git add -p'
 alias gc='git commit -m'
 alias gca='git commit --amend -m'
 alias gd='git difftool'
@@ -74,6 +70,7 @@ alias grl='git reflog'
 alias grb='git rebase'
 alias grbi='git rebase -i'
 alias gf='git fetch --all -p'
+alias gp='git push'
 
 # -------------------------------------
 # For Docker
