@@ -33,6 +33,8 @@ alias vv='vim ~/.vimrc'
 # For nvim
 # -------------------------------------
 export XDG_CONFIG_HOME=~/.config
+alias vi='nvim'
+alias vim='nvim'
 
 # -------------------------------------
 # For Global
@@ -61,8 +63,8 @@ alias gaN='git add -N'
 alias gap='git add -p'
 alias gc='git commit -m'
 alias gca='git commit --amend -m'
-alias gd='git diff'
-alias gdc='git diff --cached'
+alias gd='git difftool'
+alias gdc='git difftool --cached'
 alias gl='git log'
 # alias gg="git log --oneline --all --graph --date=short"
 alias gg="git log --oneline --all --graph --decorate=short"
