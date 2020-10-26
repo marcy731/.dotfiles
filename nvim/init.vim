@@ -88,6 +88,9 @@ vnoremap : :
 vnoremap : ;
 nnoremap <leader>n :NERDTreeToggle<cr>
 nnoremap <leader>f :Files<cr>
+nnoremap <leader>t :tabe<CR>:terminal<CR><cr>
+tnoremap <Esc> <C-\><C-n>
+tnoremap jj <C-\><C-n>
 
 " --------------------------------
 " netrw 
