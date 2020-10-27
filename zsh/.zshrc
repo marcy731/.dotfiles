@@ -35,6 +35,7 @@ alias vv='vim ~/.vimrc'
 export XDG_CONFIG_HOME=~/.config
 alias vi='nvim'
 alias vim='nvim'
+export EDITOR='nvim'
 
 # -------------------------------------
 # For Global
