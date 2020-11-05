@@ -134,6 +134,10 @@ command! LspDebug let lsp_log_verbose=1 | let lsp_log_file = expand('~/lsp.log')
 " ale
 " --------------------------------
 let g:ale_fixers = {
-\   'ruby': ['rubocop'],
+\  'ruby': ['rubocop'],
+\  'javascript': ['eslint', 'eslint'],
+\  'markdown': [
+\    {buffer, lines -> {'command': 'textlint -c ~/.config/textlintrc -o /dev/null --fix --no-color --quiet %t', 'read_temporary_file': 1}}
+\   ],
 \}
 let g:ale_fix_on_save = 1
