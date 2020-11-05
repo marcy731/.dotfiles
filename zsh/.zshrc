@@ -249,9 +249,12 @@ fi
 # よしなに補完してくれる
 # brew install zsh-completions する必要あり
 # -------------------------------------
-if [ -e /usr/local/share/zsh-completions ]; then
-  fpath=(/usr/local/share/zsh-completions $fpath)
-fi
+if type brew &>/dev/null; then
+    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+    autoload -Uz compinit
+    compinit
+  fi
 
 # -------------------------------------
 # chpwd内に書いたコマンドがcdするたびに実行される
