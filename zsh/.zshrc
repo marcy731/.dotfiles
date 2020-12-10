@@ -113,6 +113,12 @@ alias brdb='bundle exec rails db'
 alias brr='bundle exec rake routes'
 alias brg='bundle exec rails g'
 
+export POSTGRES_USER='postgres'
+export POSTGRES_PASSWORD='password'
+export DATABASE_USERNAME='postgres'
+export DATABASE_PASSWORD='password'
+export DATABASE_HOST='db'
+
 # -------------------------------------
 # For Swift
 # -------------------------------------
