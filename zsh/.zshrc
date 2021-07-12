@@ -134,6 +134,7 @@ alias cbpi='carthage bootstrap --platform iOS'
 alias cdp='cd ~/projects'
 alias cdb='cd ~/projects/bootcamp'
 alias cdd='cd ~/.dotfiles'
+alias cdn='cd ~/note'
 
 # -------------------------------------
 # For Brew Cask

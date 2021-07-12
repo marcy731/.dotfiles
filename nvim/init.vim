@@ -42,6 +42,7 @@ set clipboard=unnamed
 set encoding=utf-8
 set expandtab
 set hlsearch
+set incsearch
 set noswapfile
 set number
 set shiftwidth=2
@@ -53,9 +54,9 @@ set smartcase
 set list
 set wildmenu
 set showcmd
+set showmatch
 set smarttab
 set laststatus=2
-set incsearch
 set ruler
 set cursorline
 syntax on
