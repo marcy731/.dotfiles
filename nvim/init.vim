@@ -73,7 +73,7 @@ autocmd Filetype xml    setlocal ts=2 sw=2
 autocmd Filetype html   setlocal ts=2 sw=2 cc=100
 autocmd Filetype sh     setlocal ts=2 sw=2 cc=100
 autocmd Filetype sql    setlocal ts=2 sw=2 
-autocmd Filetype markdown     setlocal ts=2 sw=2 
+autocmd Filetype markdown     setlocal ts=2 sw=2 sts=2
 autocmd BufNewFile,BufRead *.less set syntax=css
 autocmd QuickFixCmdPost *grep* cwindow
 

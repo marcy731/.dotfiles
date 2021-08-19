@@ -7,9 +7,9 @@ export PATH="$HOME/.nodebrew/current/bin:$PATH"
 export PATH="$HOME/Library/Android/sdk:$PATH"
 export PATH="$HOME/Library/Android/sdk/tools:$PATH"
 export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
-export JAVA_HOME=`/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/java_home -v "1.8"`
 export PATH="$JAVA_HOME/bin:$PATH"
 export PATH="$HOME/development/flutter/bin:$PATH"
+# export JAVA_HOME=`/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/java_home -v "1.8"`
 
 # -------------------------------------
 # For initializing
@@ -135,6 +135,7 @@ alias cdp='cd ~/projects'
 alias cdb='cd ~/projects/bootcamp'
 alias cdd='cd ~/.dotfiles'
 alias cdn='cd ~/note'
+alias memo='cd ~/note && vim ~/note/memo/anything.md'
 
 # -------------------------------------
 # For Brew Cask
