@@ -131,6 +131,7 @@ augroup lsp_install
 augroup END
 command! LspDebug let lsp_log_verbose=1 | let lsp_log_file = expand('~/lsp.log')
 
+
 " --------------------------------
 " ale
 " --------------------------------
@@ -142,3 +143,12 @@ let g:ale_fixers = {
 \   ],
 \}
 let g:ale_fix_on_save = 1
+
+
+" --------------------------------
+" fzf
+" --------------------------------
+"  https://github.com/junegunn/fzf.vim/issues/609
+command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, {'options': '--delimiter : --nth 4..'}, <bang>0) 
+
+
