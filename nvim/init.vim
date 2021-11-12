@@ -89,7 +89,9 @@ vnoremap : :
 vnoremap : ;
 nnoremap <leader>n :NERDTreeToggle<cr>
 nnoremap <leader>f :Files<cr>
+nnoremap <leader>a :Ag<cr>
 nnoremap <leader>t :tabe<CR>:terminal<CR><cr>
+nnoremap <C-]> g<C-]>
 tnoremap <Esc> <C-\><C-n>
 tnoremap jj <C-\><C-n>
 
