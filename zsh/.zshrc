@@ -123,10 +123,11 @@ export DATABASE_HOST='db'
 # For Swift
 # -------------------------------------
 alias bp='bundle exec pod'
-alias bpi='bundle exec pod install'
+alias bpi='bTundle exec pod install'
 alias bpu='bundle exec pod update'
 alias bf='bundle exec fastlane'
 alias cbpi='carthage bootstrap --platform iOS'
+alias clearcdd='rm -r ~/Library/Developer/Xcode/DerivedData'
 
 # -------------------------------------
 # For shortening cd command
@@ -136,6 +137,11 @@ alias cdb='cd ~/projects/bootcamp'
 alias cdd='cd ~/.dotfiles'
 alias cdn='cd ~/note'
 alias memo='cd ~/note && vim ~/note/memo/anything.md'
+
+# -------------------------------------
+# For SourceTree
+# -------------------------------------
+alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
 
 # -------------------------------------
 # For Brew Cask
