@@ -15,6 +15,7 @@ export PATH="$HOME/development/flutter/bin:$PATH"
 # For initializing
 # -------------------------------------
 eval "$(rbenv init -)"
+export EncodeKey=""
 
 # Aliases
 
@@ -73,6 +74,10 @@ alias grbi='git rebase -i'
 alias gf='git fetch --all -p'
 alias gp='git push'
 alias gb='git branch'
+
+export GIT_EDITOR=vim
+export VISUAL=vim
+export EDITOR=vim
 
 # -------------------------------------
 # For Docker
@@ -353,3 +358,14 @@ export LESSOPEN='|lessfilter %s'
 # SSH
 # -------------------------------------
 # eval `ssh-agent`
+
+
+# -------------------------------------
+# Local Env
+# -------------------------------------
+if [ ! -f "$HOME/.zshenv.local" ]; then
+  touch "$HOME/.zshenv.local"
+fi
+
+# ~/.zshenv.local を読み込む
+source "$HOME/.zshenv.local"
