@@ -364,7 +364,16 @@ export LESSOPEN='|lessfilter %s'
 # Local Env
 # -------------------------------------
 if [ ! -f "$HOME/.zshenv.local" ]; then
-  touch "$HOME/.zshenv.local"
+  cat <<'EOF' > "$HOME/.zshenv.local"
+# ~/.zshenv.local
+# このファイルはあなたの個人用環境変数を定義するためのものです。
+# 下記のように export を使って設定を記述してください。
+
+# 例:
+# export API_KEY="your-api-key"
+# export DB_HOST="localhost"
+
+EOF
 fi
 
 # ~/.zshenv.local を読み込む
